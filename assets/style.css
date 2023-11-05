@@ -1,0 +1,194 @@
+/* google fonts cdn link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+/* .nav-bar style */
+.nav-bar{
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    gap: 28px;
+    height: 100vh;
+    width: 300px;
+    
+   
+}
+/* nav logo style */
+.logo>img{
+    width: 150px;
+}
+
+.menu-items>li{
+    padding: 0px 10px;
+    list-style: none;
+    margin: 40px 0px;
+}
+.menu-items>li>span{
+    margin: 0px 5px;
+}
+/* nav main bar style */
+.main-bar{
+
+    position: fixed;
+    top: 2px;
+    left: 12rem;
+    display:  flex;
+  margin-top: 15px;
+   gap: 47rem;
+    height: 50px;
+    background-color: white
+
+}
+.pages>li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 2px;
+}
+
+.greater{
+  font-size: 17px;
+  font-weight: bolder;  
+}
+.contact{   
+    text-align: center;
+    display: flex;
+}
+.contact>div{
+    margin: 0px 8px;
+
+}
+.contact>.line{
+    width: 1px;
+    height: 30px;
+    background-color: black;
+}
+/* emi-container style */
+.emi-container{
+    position: absolute;
+    left: 12rem;
+    top: 4rem;
+    height: 100vh;
+    width: 72rem;
+    padding: 20px 30px;
+    background-color:#f5f5f8
+}
+.emi-head>li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 10px;
+   
+}
+.emi-head>.bottom{
+   display: flex;
+   margin: 2px 4px;
+}
+.bottom>.li-line{
+    width: 100px;
+    height: 3px;
+    background-color: grey;
+}
+.bottom>.dk-line{
+    width: 100px;
+    height: 3px;
+    background-color: black;
+}
+/* emi-content style */
+.emi-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.emi-calc{
+    display: grid;
+    padding: 30px 10px;
+    column-gap: 20px;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 200px 200px;
+  
+}
+.container-label{
+    color: #cbccce;
+}
+
+
+/* emi-calc amount box style */
+.box{
+    width: 300px;
+    height: 50px;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    padding: 10px;
+   
+}
+.box>input{
+    width: 250px;
+    height: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    color:#b0b1b3;
+    border: none;
+   outline: none;
+   background-color: transparent;
+}
+.box>span{
+    color:#b0b1b3;
+}
+.title{
+    
+    font-weight: bolder;
+}
+.month-year{
+    margin:45px 10px;
+    padding: 0px 20px;
+}
+.month-year>label{
+   padding: 20px;
+    font-size: 15px;
+
+}
+.button>button{
+    width: 220px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    margin-right: 70px;
+    background-color: #19b4d6;
+}
+.button>button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #19b4d6;
+    box-shadow: 10px 10px 10px #19b4d6;
+}
+.emi-result{
+
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    margin-bottom: 50px;
+}
+.emi-result>div{
+    margin: 20px 20px;
+}
+/* emi result p tag style */
+.amount-head{
+    color: #c7c7c7;
+}
+
+/* emi result h3 tag style */
+.values{
+    margin: 5px 0px;
+    color: #394558
+}

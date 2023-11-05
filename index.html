@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+<!-- external css link -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <div class="nav-bar">
+        <div class="logo"><img src="./assets/logo/image_2023-11-02_15-23-54_2-removebg-preview.png" alt=""></div>
+        
+            <ul class="menu-items">
+                <li><span><img src="./assets/icons/dashboard.png"></span>Dashboard</li>
+                <li><span><img src="./assets/icons/calculator.png"></span>EMI Calc</li>
+                <li><span><img src="./assets/icons/invoice.png"></span>Invoice Generator</li>
+            </ul>
+        
+    </div>
+    <!-- navbar-main -->
+    <div class="main-bar">
+     <ul class="pages">
+        <li style="color: #b2b2b2">Pages</li>
+        <li>></li>
+        <li style="color: blue">EMI Calculator</li>
+     </ul>
+     <ul class="contact">
+<div><span><img src="./assets/icons/conversations.png"></span><b>Need Help?</b></div>
+<div class="line"></div>
+<div class="icon"><img src="./assets/icons/bussiness-man (2).png"></div>
+     </ul>
+    </div>
+    <!-- emi-container -->
+    <div class="emi-container">
+        <!-- emi-head-contents -->
+        <ul class="emi-head">
+<li><b>Home Loan</b></li>
+<li style="color: #b2b2b2">Personal Loan</li>
+<div class="bottom">
+    <div class="li-line"></div>
+    <div class="dk-line"></div>
+
+</div>
+        </ul>
+        <!-- emi-calculator-section -->
+        <div class="emi-content">
+            <div class="emi-calc">
+                <div class="amount-container">
+                    <p class="title">Loan Amount</p>
+                    <div class="box">
+        <input type="text" id="loan-amount" value="50000" required>
+        <span>₹</span>
+    </div>
+    <label class="container-label">Enter a amount without  any spaces</label>
+       </div>
+                <div class="intrest-container">
+                    <p class="title">Intrest Rate</p>
+                    <div class="box">
+        <input type="text" id="intrest-amount" value="11" required>
+        <span>%</span>
+                    </div>
+    <label class="container-label">Eg 7.5%</label>
+                </div>
+                <div class="tenure-container">
+                    <p class="title">Loan Tenure</p>
+                    <div class="box">
+        <input type="text" id="loan-tenure"  value="3" required>
+                    </div>
+    <label class="container-label">Enter a Loan Tenure in Months/Years</label>
+                </div>
+                <div class="month-year">
+                  <label for="year">  <input type="radio" value="year" name="frequency" id="year">Year</label>
+                   <label for="month"> <input type="radio" value="month" name="frequency" id="month" >Month</label>
+                </div>
+                <div class="button">
+                    <button role="button" id="btn">Calculate</button>
+                </div>
+            </div>
+    
+    <!-- emi-result-section -->
+            <div class="emi-result">
+    <div class="loan-emi">
+        <p class="amount-head">Loan Emi</p>
+        <h3 id="loan-emi-value" class="values">₹23,000</h3>
+    </div>
+    <hr>
+    <div class="total-intrest">
+        <p class="amount-head">Total Intrest</p>
+        <h3 id="total-intrest-value" class="values" >₹1,34,000</h3>
+    </div>
+    <hr>
+    <div class="total-emi-amount">
+        <p class="amount-head">Total Payment (principle + intrest)</p>
+        <h3 id="total-emi-value" class="values">₹12,34,000</h3>
+    </div>
+            </div>
+
+    </div>
+    </div>
+    
+    <script src="script/index.js"></script>
+</body>
+</html>
